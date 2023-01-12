@@ -34,50 +34,6 @@
             <button class="button is-rounded is-medium">Search</button>
           </p>
         </div>
-// Create a new nav element
-var nav = document.createElement("nav");
-
-// Add the "navbar" class to the new nav element
-nav.classList.add("navbar");
-
-// Get the element with class "box"
-var box = document.querySelector(".box");
-
-// Get the elements with class "logo" and "field"
-var logo = document.querySelector(".logo");
-var field = document.querySelector(".field");
-
-// Append the elements with class "logo" and "field" to the new nav element
-nav.appendChild(logo);
-nav.appendChild(field);
-
-// Append the new nav element to the element with class "box"
-box.appendChild(nav);
-
-// Create a new ul element
-var ul = document.createElement("ul");
-
-// Add the "navbar-item" class to the new ul element
-ul.classList.add("navbar-item");
-
-// Get all a elements
-var aElements = document.querySelectorAll("a");
-
-// Loop through all a elements
-for (var i = 0; i < aElements.length; i++) {
-    // Create a new li element
-    var li = document.createElement("li");
-
-    // Append the current a element to the new li element
-    li.appendChild(aElements[i]);
-
-    // Append the new li element to the new ul element
-    ul.appendChild(li);
-}
-
-// Append the new ul element to the new nav element
-nav.appendChild(ul);
-
         <a>
           <i class="fa-solid fa-house"></i>
         </a>
